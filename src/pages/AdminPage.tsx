@@ -67,11 +67,24 @@ export default function AdminPage() {
     }
     setChecking(true);
     void (async () => {
-      const res = await loadProfile(user.id);
-      const nextRole = res.data?.role ?? null;
-      if (!cancelled) {
-        setRole(nextRole);
-        setChecking(false);
+      try {
+        const res = await Promise.race([
+          loadProfile(user.id),
+          new Promise<never>((_, reject) =>
+            setTimeout(() => reject(new Error("Admin role check timed out")), 12_000),
+          ),
+        ]);
+        if (res.error) {
+          toast({ title: "Admin", description: res.error.message });
+        }
+        const nextRole = res.data?.role ?? null;
+        if (!cancelled) setRole(nextRole);
+      } catch (e) {
+        const message = e instanceof Error ? e.message : "Failed to check admin role";
+        toast({ title: "Admin", description: message });
+        if (!cancelled) setRole(null);
+      } finally {
+        if (!cancelled) setChecking(false);
       }
     })();
     return () => {
