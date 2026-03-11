@@ -72,9 +72,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         return { error: error ? new Error(error.message) : null };
       },
       signInWithGoogle: async () => {
+        const redirectTo = new URL(
+          import.meta.env.BASE_URL ?? "/",
+          window.location.origin,
+        ).toString();
         const { error } = await supabase.auth.signInWithOAuth({
           provider: "google",
-          options: { redirectTo: window.location.origin },
+          options: { redirectTo },
         });
         return { error: error ? new Error(error.message) : null };
       },
@@ -87,4 +91,3 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
-
