@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "city": "City",
+    "businesses": "Businesses",
+    "staff": "Staff",
+    "attack": "Attack",
+    "leaderboard": "Leaderboard",
+    "profile": "Profile",
+    "settings": "Settings",
+    "admin": "Admin"
+  },
+  "topbar": {
+    "boss": "Boss",
+    "prestige": "P{{level}}",
+    "toggleMusic": "Toggle music",
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "english": "English",
+    "arabic": "Arabic"
+  },
+  "profile": {
+    "title": "Profile",
+    "rank": "Leaderboard rank",
+    "level": "Level",
+    "prestige": "Prestige",
+    "coins": "Coins",
+    "diamonds": "Diamonds",
+    "xp": "XP",
+    "statistics": "Statistics",
+    "achievements": "Achievements",
+    "inventory": "Inventory",
+    "customization": "Customization",
+    "avatar": "Avatar",
+    "frame": "Frame",
+    "badge": "Badge",
+    "save": "Save"
+  },
+  "stats": {
+    "businessesOwned": "Businesses owned",
+    "totalIncome": "Total income",
+    "battlesWon": "Battles won",
+    "battlesLost": "Battles lost",
+    "correctAnswers": "Correct answers",
+    "accuracy": "Accuracy",
+    "districtsControlled": "Districts controlled",
+    "rareChests": "Rare chests",
+    "cosmetics": "Cosmetics",
+    "skins": "Skins"
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "notAuthorized": "You are not authorized to access this page.",
+    "players": "Players",
+    "questions": "Questions",
+    "analytics": "Analytics",
+    "searchPlaceholder": "Search by username or ID",
+    "update": "Update",
+    "ban": "Ban",
+    "suspend": "Suspend",
+    "coins": "Coins",
+    "diamonds": "Diamonds",
+    "role": "Role",
+    "player": "player",
+    "adminRole": "admin",
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "pages": {
+    "gameTitle": "Street Boss",
+    "gameSubtitle": "Mind Empire — Lebanese Edition",
+    "cityTitle": "City",
+    "leaderboardTitle": "Leaderboard",
+    "attackTitle": "Challenge Arena",
+    "authTitleLogin": "Login",
+    "authTitleSignup": "Create account"
+  },
+  "auth": {
+    "subtitle": "Use email/password or Google to sync your progress",
+    "email": "Email",
+    "password": "Password (min 6 chars)",
+    "continueGoogle": "Continue with Google",
+    "switchToSignup": "New here? Create an account",
+    "switchToLogin": "Already have an account? Login",
+    "successTitle": "Success",
+    "loginSuccess": "Logged in successfully",
+    "signupSuccess": "Account created successfully",
+    "errorTitle": "Auth error",
+    "googleErrorTitle": "Google login error"
+  },
+  "businesses": {
+    "title": "Your Businesses",
+    "buy": "Buy",
+    "upgrade": "Upgrade",
+    "unlocksAtLevel": "Unlocks at Level {{level}}",
+    "perMin": "/min"
+  },
+  "staff": {
+    "title": "Your Crew",
+    "subtitle": "Hire staff to boost your empire",
+    "hire": "Hire",
+    "hired": "Hired",
+    "unlocksAtLevel": "Unlocks at Level {{level}}",
+    "prestigePlus": "Prestige {{level}}+"
+  },
+  "common": {
+    "loading": "Loading…",
+    "loginToContinue": "Login to continue",
+    "back": "Back",
+    "save": "Save"
+  }
+}

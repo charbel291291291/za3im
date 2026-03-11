@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 234 30% 10%;
+    --foreground: 40 20% 90%;
+    --card: 234 25% 15%;
+    --card-foreground: 40 20% 90%;
+    --popover: 234 25% 12%;
+    --popover-foreground: 40 20% 90%;
+    --primary: 45 90% 55%;
+    --primary-foreground: 234 30% 10%;
+    --secondary: 155 45% 35%;
+    --secondary-foreground: 40 20% 95%;
+    --muted: 234 20% 20%;
+    --muted-foreground: 40 10% 55%;
+    --accent: 10 70% 50%;
+    --accent-foreground: 40 20% 95%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 234 20% 22%;
+    --input: 234 20% 22%;
+    --ring: 45 90% 55%;
+    --radius: 0.75rem;
+
+    /* Game-specific tokens */
+    --gold: 45 90% 55%;
+    --gold-glow: 45 100% 65%;
+    --cedar: 155 45% 35%;
+    --cedar-light: 155 40% 50%;
+    --terracotta: 10 70% 50%;
+    --terracotta-light: 10 65% 65%;
+    --night-sky: 234 30% 10%;
+    --night-deep: 234 35% 6%;
+    --diamond: 200 80% 60%;
+    --diamond-glow: 200 90% 70%;
+    --surface: 234 25% 15%;
+    --surface-hover: 234 25% 18%;
+    --surface-raised: 234 22% 20%;
+
+    --gradient-gold: linear-gradient(135deg, hsl(45 90% 55%), hsl(35 85% 45%));
+    --gradient-cedar: linear-gradient(135deg, hsl(155 45% 35%), hsl(155 50% 45%));
+    --gradient-night: linear-gradient(180deg, hsl(234 30% 12%), hsl(234 35% 6%));
+    --gradient-fire: linear-gradient(135deg, hsl(10 70% 50%), hsl(30 80% 55%));
+    --gradient-diamond: linear-gradient(135deg, hsl(200 80% 60%), hsl(210 85% 70%));
+
+    --shadow-gold: 0 4px 20px -4px hsl(45 90% 55% / 0.3);
+    --shadow-card: 0 4px 12px -2px hsl(234 35% 6% / 0.5);
+    --shadow-raised: 0 8px 24px -6px hsl(234 35% 6% / 0.6);
+
+    --font-display: 'Cairo', sans-serif;
+    --font-body: 'Tajawal', sans-serif;
+
+    --sidebar-background: 234 25% 12%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 45 90% 55%;
+    --sidebar-primary-foreground: 234 30% 10%;
+    --sidebar-accent: 234 20% 20%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 234 20% 22%;
+    --sidebar-ring: 45 90% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior: none;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+  .text-cedar {
+    color: hsl(var(--cedar));
+  }
+  .text-diamond {
+    color: hsl(var(--diamond));
+  }
+  .bg-surface {
+    background-color: hsl(var(--surface));
+  }
+  .bg-surface-hover {
+    background-color: hsl(var(--surface-hover));
+  }
+  .bg-surface-raised {
+    background-color: hsl(var(--surface-raised));
+  }
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
+  }
+  .bg-gradient-cedar {
+    background: var(--gradient-cedar);
+  }
+  .bg-gradient-night {
+    background: var(--gradient-night);
+  }
+  .bg-gradient-fire {
+    background: var(--gradient-fire);
+  }
+  .bg-gradient-diamond {
+    background: var(--gradient-diamond);
+  }
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  .shadow-raised {
+    box-shadow: var(--shadow-raised);
+  }
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+  .coin-bounce {
+    animation: coinBounce 0.5s ease-out;
+  }
+  .pulse-gold {
+    animation: pulseGold 2s ease-in-out infinite;
+  }
+  .slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+}
+
+@keyframes coinBounce {
+  0% { transform: translateY(0) scale(1); }
+  40% { transform: translateY(-12px) scale(1.15); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+@keyframes pulseGold {
+  0%, 100% { box-shadow: 0 0 0 0 hsl(45 90% 55% / 0.4); }
+  50% { box-shadow: 0 0 16px 4px hsl(45 90% 55% / 0.2); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: hsl(var(--muted)); border-radius: 4px; }

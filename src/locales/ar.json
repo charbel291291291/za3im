@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "city": "المدينة",
+    "businesses": "الأعمال",
+    "staff": "الطاقم",
+    "attack": "هجوم",
+    "leaderboard": "المتصدرون",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "admin": "لوحة الإدارة"
+  },
+  "topbar": {
+    "boss": "زعيم",
+    "prestige": "P{{level}}",
+    "toggleMusic": "تبديل الموسيقى",
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "language": "اللغة",
+    "english": "الإنجليزية",
+    "arabic": "العربية"
+  },
+  "profile": {
+    "title": "الملف الشخصي",
+    "rank": "الترتيب في المتصدرين",
+    "level": "المستوى",
+    "prestige": "الهيبة",
+    "coins": "العملات",
+    "diamonds": "الألماس",
+    "xp": "الخبرة",
+    "statistics": "الإحصائيات",
+    "achievements": "الإنجازات",
+    "inventory": "المخزون",
+    "customization": "التخصيص",
+    "avatar": "الأفاتار",
+    "frame": "الإطار",
+    "badge": "الشارة",
+    "save": "حفظ"
+  },
+  "stats": {
+    "businessesOwned": "الأعمال المملوكة",
+    "totalIncome": "إجمالي الدخل",
+    "battlesWon": "المعارك الرابحة",
+    "battlesLost": "المعارك الخاسرة",
+    "correctAnswers": "الإجابات الصحيحة",
+    "accuracy": "الدقة",
+    "districtsControlled": "المناطق المسيطر عليها",
+    "rareChests": "صناديق نادرة",
+    "cosmetics": "التجميلات",
+    "skins": "الهيئات"
+  },
+  "admin": {
+    "title": "لوحة تحكم الإدارة",
+    "notAuthorized": "غير مصرح لك بالوصول إلى هذه الصفحة.",
+    "players": "اللاعبون",
+    "questions": "الأسئلة",
+    "analytics": "التحليلات",
+    "searchPlaceholder": "ابحث بالاسم أو المعرف",
+    "update": "تحديث",
+    "ban": "حظر",
+    "suspend": "إيقاف",
+    "coins": "العملات",
+    "diamonds": "الألماس",
+    "role": "الدور",
+    "player": "لاعب",
+    "adminRole": "مدير",
+    "add": "إضافة",
+    "edit": "تعديل",
+    "delete": "حذف"
+  },
+  "pages": {
+    "gameTitle": "ستريت بوس",
+    "gameSubtitle": "إمبراطورية العقل — النسخة اللبنانية",
+    "cityTitle": "المدينة",
+    "leaderboardTitle": "المتصدرون",
+    "attackTitle": "ساحة التحدي",
+    "authTitleLogin": "تسجيل الدخول",
+    "authTitleSignup": "إنشاء حساب"
+  },
+  "auth": {
+    "subtitle": "استخدم البريد/كلمة المرور أو Google لمزامنة تقدمك",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور (6 أحرف على الأقل)",
+    "continueGoogle": "المتابعة عبر Google",
+    "switchToSignup": "جديد هنا؟ أنشئ حسابًا",
+    "switchToLogin": "لديك حساب؟ سجّل الدخول",
+    "successTitle": "تم",
+    "loginSuccess": "تم تسجيل الدخول بنجاح",
+    "signupSuccess": "تم إنشاء الحساب بنجاح",
+    "errorTitle": "خطأ في الدخول",
+    "googleErrorTitle": "خطأ تسجيل Google"
+  },
+  "businesses": {
+    "title": "أعمالك",
+    "buy": "شراء",
+    "upgrade": "ترقية",
+    "unlocksAtLevel": "يفتح عند المستوى {{level}}",
+    "perMin": "/دقيقة"
+  },
+  "staff": {
+    "title": "فريقك",
+    "subtitle": "قم بتوظيف الطاقم لتعزيز إمبراطوريتك",
+    "hire": "توظيف",
+    "hired": "تم التوظيف",
+    "unlocksAtLevel": "يفتح عند المستوى {{level}}",
+    "prestigePlus": "هيبة {{level}}+"
+  },
+  "common": {
+    "loading": "جار التحميل…",
+    "loginToContinue": "سجّل الدخول للمتابعة",
+    "back": "رجوع",
+    "save": "حفظ"
+  }
+}
