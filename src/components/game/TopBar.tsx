@@ -13,6 +13,7 @@ export function TopBar() {
   const { user, signOut, loading } = useAuth();
   const navigate = useNavigate();
   const [musicOn, setMusicOn] = useState(isBGMPlaying());
+  const [signingOut, setSigningOut] = useState(false);
   const { t } = useI18n();
   const [role, setRole] = useState<string | null>(null);
 
@@ -110,10 +111,16 @@ export function TopBar() {
         )}
 
         <button
-          disabled={loading}
+          disabled={loading || signingOut}
           onClick={async () => {
             if (user) {
-              await signOut();
+              setSigningOut(true);
+              try {
+                await signOut();
+              } finally {
+                setSigningOut(false);
+                navigate("/auth", { replace: true });
+              }
               return;
             }
             navigate("/auth");
